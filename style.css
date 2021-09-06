@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: hsl(183, 100%, 15%);
+  display: flex;
+  justify-content: center;
+  letter-spacing: 10px;
+  flex-wrap: wrap;
+}
+
+.left-col {
+  background-color: white;
+  border-radius: 5% 5% 0% 0%;
+}
+
+.right-col {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 5%;
+  margin: 0px 20px;
+}
+
+.name {
+  padding: 5%;
+  margin: 0px 20px;
+  color: hsl(183, 100%, 15%);
+}
+
+.tip_amount {
+  padding: 3%;
+  margin: 0px 20px;
+  color: hsl(0, 0%, 100%);
+}
+
+.per_person {
+  font-size: 0.75em;
+  margin: 0px 30px 0px;
+  color: hsl(0, 0%, 100%);
+}
+
+.bill-input {
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  background-image: url(images/icon-dollar.svg) no-repeat;
+  padding-left: 30px;
+  margin: 0px 35px;
+  width: 70%;
+  font-size: 200%;
+}
+
+.people-input {
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  background-image: url(images/icon-dollar.svg) no-repeat;
+  padding-left: 30px;
+  margin: 10px 35px 30px;
+  width: 70%;
+  font-size: 200%;
+}
+
+.select_tips_container {
+  padding: 3%;
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tips_inputs {
+  padding: 5px 45px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+}
+
+.reset_button {
+  padding: 10px 30px;
+  margin: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 85%;
+}
+
+#custom {
+  padding: 5px 5px;
+  margin: 5px;
+  background-color: hsl(189, 41%, 97%);
+  text-align: right;
+}
