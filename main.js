@@ -2,6 +2,9 @@ class SplitBill {
     constructor() {
         this.bill = document.querySelector(".bill-input").value;
         this.numberOfPeople = document.querySelector(".people-input").value;
+        this.resultTip = document.querySelector("#displayTipPerP").value;
+        this.resultTotal = document.querySelector("#displayTotalPerP").value;
+        this.clear()
     }
 
     selectedTip () {
@@ -17,27 +20,39 @@ class SplitBill {
             tipPerPerson (0.15); 
             tipTotal (0.15)           
         };
-        return 
+        document.getElementById("20_tip").onclick = function() {
+            tipPerPerson (0.20); 
+            tipTotal (0.20)           
+        };
+        document.getElementById("25_tip").onclick = function() {
+            tipPerPerson (0.25); 
+            tipTotal (0.25)           
+        };
+        document.getElementById("50_tip").onclick = function() {
+            tipPerPerson (0.50); 
+            tipTotal (0.50)           
+        };
+    }
 
+    numberOfPeople () {
+        let numOfPeople = document.querySelector(".people-input").value;
+        return numOfPeople
     }
 
     tipPerPerson (tip) {
-        return this.bill * this.selectTip() * tip
+        let tipPerP = (this.bill * tip) / numberOfPeople ()
+        resultTip.innerHTML = tipPerP
     }
-
 
     tipTotal (tip) {
-        return tipPerPerson() * this.numberOfPeople * tip
+        let tipTotalPerP = ((this.bill * tip) / numberOfPeople ()) + (this.bill / this.numberOfPeople() )
+        resultTotal.innerHTML = tipTotalPerP
     }
 
-    reset() {
+    clear() {
         document.querySelector("bill-input").value = ""
         document.querySelector("people-input").value = ""
     }
-
-    displayTipAmount() {
-
-    }
-
-
 }
+
+const bill = new SplitBill()
