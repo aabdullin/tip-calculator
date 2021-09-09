@@ -4,7 +4,6 @@ class SplitBill {
         this.numberOfPeople = document.querySelector(".people-input").value;
         this.resultTip = document.querySelector("#displayTipPerP").value;
         this.resultTotal = document.querySelector("#displayTotalPerP").value;
-        this.clear()
     }
 
     selectedTip () {
