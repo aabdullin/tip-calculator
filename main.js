@@ -40,9 +40,6 @@ class SplitBill {
         document.getElementById("15_tip").onclick = function() {
             this.onTipClicked(0.15);
         };
-        document.getElementById("20_tip").onclick = function() {
-            this.onTipClicked(0.2);
-        };
         document.getElementById("25_tip").onclick = function() {
             this.onTipClicked(0.25);
         };
@@ -65,3 +62,5 @@ class SplitBill {
 
 const bill = new SplitBill()
 bill.selectedTip()
+
+
