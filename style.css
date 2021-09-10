@@ -83,7 +83,7 @@ h1 {
   font-size: 24px;
 }
 
-.reset_button {
+#reset_button {
   padding: 10px 30px;
   margin: 25px;
   border: none;
