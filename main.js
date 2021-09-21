@@ -88,12 +88,6 @@ class SplitBill {
         document.getElementById("reset_button").onclick = () => {
             this.clear()
         };
-        // document.getElementById("5_tip").o(0.05) = () => { this.onTipClicked(0.5); };
-        // document.getElementById("10_tip").o(0.1) = () => { this.onTipClicked(); };
-        // document.getElementById("15_tip").o(0.15) = () => { this.onTipClicked(); };
-        // document.getElementById("20_tip").o(0.2) = () => { this.onTipClicked(); };
-        // document.getElementById("25_tip").o(0.25) = () => { this.onTipClicked(); };
-        // document.getElementById("50_tip").o(0.5) = () => { this.onTipClicked() };
     }
 
 
